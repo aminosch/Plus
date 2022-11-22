@@ -1,0 +1,190 @@
+body{
+	background: linear-gradient(to bottom right, blue, pink);
+}
+.contenu{
+	display: block;
+    margin-left: auto;
+    margin-right: auto; 
+	width: 300px;
+	background: linear-gradient(to bottom right, rgb(0, 255, 255), rgba(12, 212, 202, 0.267));
+	
+	border-radius: 40px;
+	padding: 20px;
+	font-size: 26px;
+	text-align: center; 
+	box-shadow: 10px 10px 15px rgba(0,0,0,.5);
+}
+#parametres{
+	width: 250px;
+	margin-left: auto;
+    margin-right: auto;
+	padding: 10px;	
+}
+#titreParametres{
+	font-size: 22px;
+	font-weight: bold;
+}
+#note{
+	font-family:Georgia,serif;
+	font-size:20px;
+	font-weight: bold;
+	color:red;
+	text-align: center;
+}
+
+#remarque{
+	font-family:Georgia,serif;
+	font-size:20px;
+	font-weight: bold;
+	color:blue;
+	text-align: center;
+}
+#tempExpire{
+	font-family:Georgia,serif;
+	font-size:20px;
+	font-weight: bold;
+	color:rgba(200,0,0);
+	text-align: center;
+}
+.bt{
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+	width: 250px;
+	height: 30px;
+	border-radius: 10px;
+	border-width: 0;
+	box-shadow: 10px 10px 15px rgba(0,0,0,.5);
+	background: linear-gradient( rgb(226, 140, 10), #e49f0c93);
+}
+.bt:hover{
+	background-color: rgba(250,250,0,0.3);	
+}
+#nbOp, #tempsLimite{
+	width: 40px;
+}
+#labelNbOp, #labelTempsLimite, #secondes{
+	font-size: 18px;
+	font-weight: bold;
+}
+#exercice{
+	width: 250px;
+	padding: 10px;
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-radius:10px;
+	background: linear-gradient( rgb(230, 226, 5), #c3cf139a);
+	box-shadow: 10px 10px 15px rgba(0,0,0,.5);
+}
+#temps{
+	width: 150px;
+	height: 22px;
+	text-align: center;
+	font-size: 16px;
+}
+.imgClock{
+	width: 50px;
+	height: 30px;
+}
+table{
+	width:80%;
+	margin-left: auto;
+	margin-right: auto;
+	/*border-width:1px; 
+ border-style:solid; 
+ border-color:black;*/
+}
+td { 
+	/*border-width:1px;
+	border-style:solid; 
+	border-color:red;*/
+	vertical-align:middle;
+	text-align: center;
+	
+}
+
+
+@media (max-width: 640px) {
+	* {
+		box-sizing: border-box;
+	}
+	
+	/* passer body (et tous les éléments de largeur fixe) en largeur automatique */
+
+	body {
+		width: auto;
+		margin: 0;
+		padding: 0;
+	}
+	
+	/* fixer une largeur maximale de 100% aux éléments potentiellement problématiques */
+
+	img,
+	table,
+	td,
+	blockquote,
+	code,
+	pre,
+	textarea,
+	input,
+	iframe,
+	object,
+	embed,
+	video {
+		max-width: 100%;
+	}
+	
+	/* conserver le ratio des images */
+
+	img {
+		height: auto;
+	}
+	
+	/* gestion des mots longs */
+
+	textarea,
+	table,
+	td,
+	th,
+	code,
+	pre,
+	samp {
+		-webkit-hyphens: auto; /* césure propre */
+		-moz-hyphens: auto;
+		hyphens: auto;
+		word-wrap: break-word; /* passage à la ligne forcé */
+	}
+	
+	code,
+	pre,
+	samp {
+		white-space: pre-wrap; /* passage à la ligne spécifique pour les éléments à châsse fixe */
+	}
+	
+	/* Passer à une seule colonne (à appliquer aux éléments multi-colonnes) */
+
+	.element1,
+	.element2 {
+		float: none;
+		width: auto;
+	}
+	
+	/* masquer/afficher les éléments  */
+
+	.u-mobile {          display: block;          display: revert !important; /* affichage des éléments */        }        .u-no-mobile {          display: none !important; /* masquage des éléments */        }
+	
+	/* Un message personnalisé */
+
+	body:before {
+		content: "Version mobile du site";
+		display: block;
+		text-align: center;
+		font-style: italic;
+		color: 
+#777;
+	}
+}

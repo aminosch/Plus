@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="addition.css" type="text/css" >
+  <script src="addition.js"></script>
+  <title>Exercices addition</title>
+  
+</head>
+<body>
+	<div class = "contenu">
+		<form id = "parametres">
+			<fieldset>
+				<legend id = "titreParametres">Parameters</legend>
+				<label for="tempsLimite" id = "labelTempsLimite">Tijdslimiet: </label>
+				<input id="tempsLimite" name="nbOp" type="number" min="1" max="60" value="30" required>
+				<span id ="secondes"> sec </span>
+				<br/>
+				<label for="nbOp" id = "labelNbOp">Aantal operaties: </label>
+				<input id="nbOp" name="nbOp" type="number" min="1" max="10" value="10" required>
+			</fieldset>
+		</form>
+		
+		<button class = "bt" onclick = "afficherAddition()">Nieuwe oefening</button>
+		<br/>
+		<button class = "bt" id = "btStart" onclick = "commencerExercice()">Start</button>
+		<br/>
+		<table>
+			<tr>
+				<td><img src = "clock2.gif" class = "imgClock"></td>
+				<td><input type = "text" id = "temps" value = "00:00" readonly></input></td>
+				<td><img src = "clock2.gif" class = "imgClock"></td>
+			</tr>
+		</table>
+		
+		<button class = "bt" id = "btChek" onclick="corrigerAddition()">Check</button>
+		<br/>
+		<div id="exercice"> </div>
+		<script>
+			afficherAddition();
+		</script>
+		<div id = "tempExpire"> </div>
+		<div id = "note"> </div> 
+		<div id = "remarque"> </div> 
+		</div>
+	</div
+
+</body>
