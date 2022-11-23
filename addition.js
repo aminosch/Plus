@@ -34,9 +34,10 @@ function afficherAddition(){
 		var zone = document.createElement("input");
 		zone.setAttribute("type", "number");
 		zone.id = "z" + i;
-		zone.style.height = "20px";
-		zone.style.fontSize = "22px";
+		zone.style.height = "30px";
+		zone.style.fontSize = "24px";
 		zone.style.width = "60px";
+		zone.style.marginTop = "5px"
 		terme1 = Math.floor(Math.random() * 10);
 		terme2 = Math.floor(Math.random() * 10);
 		tab[i][0] = terme1;
