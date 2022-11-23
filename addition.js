@@ -32,7 +32,7 @@ function afficherAddition(){
 	for(var i = 0 ; i < nbOperation ; i++){
 		//Créer une nouvelle input 
 		var zone = document.createElement("input");
-		zone.setAttribute("type", "text");
+		zone.setAttribute("type", "number");
 		zone.id = "z" + i;
 		zone.style.height = "20px";
 		zone.style.fontSize = "22px";
