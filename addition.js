@@ -47,7 +47,8 @@ function afficherAddition(){
 		document.getElementById("exercice").appendChild(zone);
 		document.getElementById("exercice").innerHTML  = document.getElementById("exercice").innerHTML + "<br/>";
 	}
-	disabledTexte(true);	
+	disabledTexte(true);
+	document.getElementById("btChek").disabled = true;	
 	if ((document.getElementById("tempsLimite").value > 0) && (document.getElementById("nbOp").value > 0)){
 		//masquer la note et la remarque
 		
@@ -55,7 +56,6 @@ function afficherAddition(){
 		document.getElementById("note").style.display = "none";
 		document.getElementById("remarque").style.display = "none";
 		document.getElementById("btStart").disabled = false;
-		document.getElementById("btChek").disabled = false;
 		window.clearInterval(interval);
 	}
 	else{
@@ -64,10 +64,8 @@ function afficherAddition(){
 		document.getElementById("note").style.display = "none";
 		document.getElementById("remarque").style.display = "none";
 		document.getElementById("btStart").disabled = true;
-		document.getElementById("btChek").disabled = true;
 		window.clearInterval(interval);
 	}
-	
 		
 }
 
@@ -105,6 +103,7 @@ function commencerExercice(){
 	interval = window.setInterval(start, 1000);
 	document.getElementById("btStart").disabled = true;
 	disabledTexte(false);
+	document.getElementById("btChek").disabled = false;
 }
 
 
